@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collapsible Tree</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Collapsible Tree</h1>
+      <p>Interactive hierarchical data explorer</p>
+    </div>
+    <div class="actions">
+      <input id="search" type="search" placeholder="Search nodes..." aria-label="Search nodes" />
+      <button id="expandAll">Expand all</button>
+      <button id="collapseAll">Collapse all</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="tree-panel" aria-label="Tree navigation">
+      <div id="tree" class="tree"></div>
+    </section>
+    <aside id="details" class="details">
+      <div class="empty-state">
+        <div class="empty-icon">⌘</div>
+        <h2>Select a node</h2>
+        <p>Single-click a node to expand or collapse it. Double-click a node to open its details.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
